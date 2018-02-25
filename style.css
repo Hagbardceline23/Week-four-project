@@ -1,0 +1,88 @@
+
+     
+		body{
+			background-image: url("images/light_sabers.jpg");
+			background-size: cover;
+			background-repeat:no-repeat;
+			font-family: 'Oswald', sans-serif;
+		}
+		#characters{
+			font-size: 64px;
+			color: white;
+			display: inherit;
+			margin-top: 0px;
+			cursor:pointer;
+		}
+		#luke-skywalker{
+			font-size: 18px;
+			position: inherit;
+			display: inline-block; 
+			border: solid 2px;
+			padding: 15px 32px;
+			text-align: center;
+		}
+		#obi-wan{
+			font-size: 18px;
+			display: inline-block; 
+			border: solid 2px;
+			padding: 15px 32px;
+			text-align: center;
+		}
+		#darth-maul{
+			font-size: 18px;
+			display: inline-block; 
+			border: solid 2px;
+			padding: 15px 32px;
+			text-align: center;
+		}
+		#darth-sidious{
+			font-size: 18px;
+			display: inline-block; 
+			border: solid 2px;
+			padding: 15px 32px;
+			text-align: center;
+		}
+		#p-health-power, #o-health-power {
+			color: #ffd24c;
+			font-size: 20px;
+		}
+		#player-character{
+			padding: 15px 32px;
+			font-size: 24px;
+			color: #1090e5;
+		}
+		#enemies-available{
+			padding: 15px 32px;
+			font-size: 24px;
+			color: #ef1515;
+
+		}
+		#fight-section{
+			font-size: 24px;
+		}
+		#attack{
+			font-size: 24px;
+		}
+		button {
+		    background-color: black;
+		    border: none;
+		    color: white;
+		    font-weight: bold;
+		    padding: 10px 24px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 24px;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		}
+		#defender{
+			padding: 15px 32px;
+			font-size: 24px;
+			color: #3ba303;
+
+		}
+		#game-status{
+			color: white;
+			font-size: 20px;
+		}
