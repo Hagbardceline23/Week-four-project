@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
+			$(
+
 		var lukeSkywalker = 100;
-		var obiWan = 120;
+		var darthVader = 120;
 		var darthMaul = 180;
 		var darthSidious = 150;
 		var opponent;
@@ -22,8 +24,8 @@ $(document).ready(function(){
 			if(myPlayer === "Luke Skywalker"){
 				playerHealthPower = lukeSkywalker;
 				playerAttack = 5;
-			}else if(myPlayer === "Obi-Wan"){
-				playerHealthPower = obiWan;
+			}else if(myPlayer === "Darth vader"){
+				playerHealthPower = darthVader;
 				playerAttack = 8;
 			}else if(myPlayer === "Darth Maul"){
 				playerHealthPower = darthMaul;
@@ -37,9 +39,7 @@ $(document).ready(function(){
 			for (var i = 0; i < 3; i++){
 				var enemy = ($("#characters div").get(0));
 				$(enemy).appendTo($("#enemies-available"));
-			}
-
-			$("#enemies-available div").off("click");
+			}"#enemies-available div").off("click");
 			$("#enemies-available div").on("click", function(){
 				$("#game-status").empty();
 				defender = (this.id);;
@@ -51,8 +51,8 @@ $(document).ready(function(){
 				if(myOpponent === "Luke Skywalker"){
 					opponentHealthPower = lukeSkywalker;
 					opponentAttack = 5;
-				}else if(myOpponent === "Obi-Wan"){
-					opponentHealthPower = obiWan;
+				}else if(myOpponent === "Darth vader"){
+					opponentHealthPower = darthVader;
 					opponentAttack = 8;
 				}else if(myOpponent === "Darth Maul"){
 					opponentHealthPower = darthMaul;
