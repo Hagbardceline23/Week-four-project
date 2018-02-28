@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-			$(
+		
 
 		var lukeSkywalker = 100;
 		var darthVader = 120;
@@ -39,7 +39,8 @@ $(document).ready(function(){
 			for (var i = 0; i < 3; i++){
 				var enemy = ($("#characters div").get(0));
 				$(enemy).appendTo($("#enemies-available"));
-			}"#enemies-available div").off("click");
+			}
+			$("#enemies-available div").off("click");
 			$("#enemies-available div").on("click", function(){
 				$("#game-status").empty();
 				defender = (this.id);;
@@ -92,7 +93,7 @@ $(document).ready(function(){
 			$("#p-health-power").text("Your Health Power: " + playerHealthPower);
 			$("#o-health-power").text(opponent + "Health Power: " + opponentHealthPower);
 
-			if(playerHealthPower > 0 & opponentHealthPower > 0){
+			if(playerHealthPower > 0 && opponentHealthPower > 0){
 				$("#game-status").empty();
 
 				$("#game-status").append("You attacked " + opponent + " for " + playerAttack + " damage."); 
@@ -101,12 +102,12 @@ $(document).ready(function(){
 				playerHealthPower = playerHealthPower - opponentAttack;
 				opponentHealthPower = opponentHealthPower - playerAttack;
 			}
-			else if(playerHealthPower <= 0 & opponentHealthPower > 0){
+			else if(playerHealthPower <= 0 && opponentHealthPower > 0){
 				$("#game-status").empty();
 				$("#game-status").append("You have been defeated. GAME OVER!!!");
 				$("#restartGame").show();
 			}
-			else if(opponentHealthPower <= 0 & playerHealthPower > 0){
+			else if(opponentHealthPower <= 0 && playerHealthPower > 0){
 				$("#game-status").empty();
 				$("#" + defender).remove();
 				if ($("#enemies-available").children().length > 1 ) {
